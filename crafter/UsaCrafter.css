@@ -1,0 +1,25 @@
+
+
+.pane {
+    -fx-border-insets: 23;
+    -fx-background-insets: 23;
+    -fx-background-radius: 10;
+    -fx-border-radius: 6;
+    -fx-border-color: gray;
+    -fx-border-style: solid;
+    -fx-border-width: 1;
+    -fx-effect: dropshadow(three-pass-box, rgba(100, 100, 100, .3), 15, 0.5, 0, 0);
+    -fx-font-family: "Tahoma";
+}
+
+.title {
+    -fx-font-weight: bold;
+}
+
+.start-button {
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+    -fx-background-color: linear-gradient(#e56060, #d31f1f);
+    -fx-effect: dropshadow( three-pass-box, rgba(0, 0, 0, 0.6), 5, 0.0, 0, 1);
+    -fx-mark-color: white;
+}

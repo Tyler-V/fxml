@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<Pane fx:id="pane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onMouseDragged="#onMouseDragged" onMousePressed="#onMousePressed" prefHeight="269.0" prefWidth="438.0" styleClass="pane" stylesheets="@UsaCrafter.css" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="scripts.Crafter2.FxController">
+	<children>
+		<ChoiceBox fx:id="materialOption" layoutX="111.0" layoutY="73.0" prefWidth="150.0" />
+		<Label layoutX="45.0" layoutY="73.0" prefHeight="25.0" prefWidth="54.0" text="Material" />
+		<ChoiceBox fx:id="productOption" layoutX="111.0" layoutY="110.0" prefWidth="150.0" />
+		<Label layoutX="45.0" layoutY="110.0" prefHeight="25.0" prefWidth="54.0" text="Product" />
+		<ChoiceBox fx:id="locationOption" disable="true" layoutX="111.0" layoutY="148.0" prefWidth="150.0" />
+		<Label layoutX="45.0" layoutY="148.0" prefHeight="25.0" prefWidth="54.0" text="Location" />
+		<CheckBox fx:id="autoProgressionCheckbox" layoutX="279.0" layoutY="110.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="129.0" text=" Auto Progression" />
+		<Label alignment="CENTER" layoutX="25.0" layoutY="23.0" prefHeight="38.0" prefWidth="390.0" styleClass="title" text="USA Crafter" textAlignment="CENTER">
+			<font>
+				<Font name="System Bold" size="18.0" />
+			</font>
+		</Label>
+		<Separator layoutX="24.0" layoutY="60.0" prefHeight="3.0" prefWidth="390.0" />
+		<Button fx:id="startButton" layoutX="142.0" layoutY="202.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="150.0" styleClass="start-button" text="Start" />
+		<Button fx:id="closeButton" alignment="BOTTOM_CENTER" layoutX="378.0" layoutY="29.0" mnemonicParsing="false" onAction="#closeWindow" style="-fx-background-color: inherit;" text="X">
+			<font>
+				<Font name="Arial" size="14.0" />
+			</font>
+		</Button>
+		<Button fx:id="minimizeButton" alignment="TOP_CENTER" layoutX="349.0" layoutY="26.0" mnemonicParsing="false" onAction="#minimizeWindow" prefHeight="29.0" prefWidth="16.0" style="-fx-background-color: inherit;" text="_">
+			<font>
+				<Font name="Segoe MDL2 Assets" size="14.0" />
+			</font>
+		</Button>
+      <Separator layoutX="24.0" layoutY="187.0" prefHeight="3.0" prefWidth="390.0" />
+	</children>
+</Pane>
